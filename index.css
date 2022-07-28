@@ -16,7 +16,6 @@ body{
     /* ContenedorLogoPrincipal */
     #ContenedorLogoPrincipal{
         display: flex;
-        /* justify-content: space-between; */
         margin: 25px 0px;
         padding: 15px;
     }
@@ -33,7 +32,6 @@ body{
         width: 200px;
         height: 120px;
         margin-top: 10px;
-        /* margin: 45px 0px 25px 62px; */
     }
     
     /* Titulo de Bienvenidos */
@@ -152,15 +150,21 @@ body{
     #TituloWhereNosVisitas{
         font-size: 15px;
     }
-    /* Imagen Flecha Hover (Cuidado con la primer Query) */
-    .ImagenFlecha:hover{
-        background-color: #FFE633;
-        border-radius: 20px;
-        transform:rotate(45deg);
-    }
-
 }
 
+/* Tercer Media Query */
+@media only screen and (min-width:425px){
+    /* Titulo de Bienvenidos */
+    #TituloBienvenido{
+        font-size: 31px;
+        letter-spacing: 1.5px;
+    }
+    /* Titulo "De donde nos visitas" */
+    #TituloWhereNosVisitas{
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+}
 
 
 
