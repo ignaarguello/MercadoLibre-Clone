@@ -10,7 +10,8 @@
 
     /* Body */
     body{
-        background: #FFE633;
+        /* background: #FFE633; */
+        background: red;
         /* Animation */
         animation-name: ChangeBackgroundColor ;
         animation-duration: 3.5s;
