@@ -1,6 +1,7 @@
 /* Imports de las Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 /* Reseteo Total */
 *{
@@ -13,6 +14,15 @@
 /* Body */
 body{
     background-color: #FFE633;
+}
+
+.ContenedorPais:hover{
+    transition: 0.5s;
+    background: rgb(17, 16, 16);
+}
+
+#ContenedorListaPaises{
+    margin-left: 130px !important;
 }
 
 /* Primer Media Query */
@@ -160,13 +170,16 @@ body{
 @media only screen and (min-width:425px){
     /* Titulo de Bienvenidos */
     #TituloBienvenido{
-        font-size: 31px;
+        font-size: 32px;
         letter-spacing: 1.5px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 900;
     }
     /* Titulo "De donde nos visitas" */
     #TituloWhereNosVisitas{
-        font-size: 17px;
+        font-size: 15px;
         letter-spacing: 1px;
+        font-family: 'Quicksand', sans-serif;
     }
 }
 
@@ -193,7 +206,54 @@ body{
         letter-spacing: 2.5px;
         font-family: 'Quicksand', sans-serif;
     }
+
+    /* Contenedor individual de cada pais */
+    .ContenedorPais{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 6px;
+        width: 13rem;
+        height: 12.5rem;
+        border-radius: 100%;
+        /* background-color: #f8f8f8ef; */
+        background-color: rgba(0, 0, 0, 0.781);
+        margin: 30px 14px;
+        border: none;
+    }
+    /* Hidden al Logo Flecha de cada pais */
+    .LogoRedireccion{
+        visibility: hidden;
+    }
+    /* Nombre Pais */
+    .NombrePais a{
+        font-size: 20px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: whitesmoke;
+        font-family: 'Quicksand', sans-serif;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    /* Contenedor General de los Paises */
+    #ContenedorListaPaises{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 30px;
+    }
+
+    /* Imagen de cada Pais */
+    .ImagenPais{
+        margin-top: 30px;
+        height: 70px;
+        width: 72px;
+    }
 }
+
+
+
 
 
 
