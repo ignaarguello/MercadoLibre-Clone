@@ -1,35 +1,27 @@
+/* Imports de las Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+/* Reseteo Total */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Body */
+body{
+    background-color: #FFE633;
+}
+
 /* Primer Media Query */
 @media only screen and (min-width:320px){
-    /* Reseteo Total */
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow-x: hidden;
-    }
-
-    /* Body */
-    body{
-        background: red;
-        /* Animation */
-        animation-name: ChangeBackgroundColor ;
-        animation-duration: 3.5s;
-    }
-
-    @keyframes ChangeBackgroundColor {
-        0%{
-            background-color: rgb(255, 255, 255);
-        }
-        100%{
-            background-color:#FFE633 ;
-        }
-    }
-    
     /* ContenedorLogoPrincipal */
     #ContenedorLogoPrincipal{
         display: flex;
         margin: 25px 0px;
-        padding: 5px;
+        padding: 15px;
     }
     
     #ContenedorLogoPrincipal div{
@@ -141,10 +133,18 @@
         margin-right: 4px;
         margin-top: 2px;
     }
+
+    .ImagenFlecha:hover{
+        background-color: #FFE633;
+        border-radius: 20px;
+        transform:rotate(45deg);
+    }
+
 }
 
 /* Segunda Media Query */
 @media only screen and (min-width:375px){
+    
     /* Titulo de Bienvenidos */
     #TituloBienvenido{
         font-size: 26px;
@@ -160,13 +160,38 @@
 @media only screen and (min-width:425px){
     /* Titulo de Bienvenidos */
     #TituloBienvenido{
-        font-size: 33px;
+        font-size: 31px;
         letter-spacing: 1.5px;
     }
     /* Titulo "De donde nos visitas" */
     #TituloWhereNosVisitas{
-        font-size: 15px;
+        font-size: 17px;
         letter-spacing: 1px;
+    }
+}
+
+/* Cuarta Media Query */
+@media only screen and (min-width:768px){
+    /* Contenedor Titulos */
+    #Contenedor-Titulos{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    /* Titulo de Bienvenidos */
+    #TituloBienvenido{
+        font-size: 40px;
+        letter-spacing: 1.5px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+    }
+    /* Titulo "De donde nos visitas" */
+    #TituloWhereNosVisitas{
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        font-family: 'Quicksand', sans-serif;
     }
 }
 
