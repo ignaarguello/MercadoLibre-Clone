@@ -40,32 +40,6 @@ body{
 
 /* Primer Media Query */
 @media only screen and (min-width:320px){
-    /* Reseteo Total */
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        overflow-x: hidden;
-    }
-
-    /* Body */
-    body{
-        /* background: #FFE633; */
-        background: red;
-        /* Animation */
-        animation-name: ChangeBackgroundColor ;
-        animation-duration: 3.5s;
-    }
-
-    @keyframes ChangeBackgroundColor {
-        0%{
-            background-color: rgb(255, 255, 255);
-        }
-        100%{
-            background-color:#FFE633 ;
-        }
-    }
-    
     /* ContenedorLogoPrincipal */
     #ContenedorLogoPrincipal{
         display: flex;
